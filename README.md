@@ -13,3 +13,4 @@ Now to save a state press 's' on the keyboard . it kind of freezes the state of 
 To present press 'p' and to edit while in presenting mode press 'e'.
 Press left and right arrow keys to transition between the states that you saved .
 You can also save a project by using the save feature .
+For video and images to work make separate folders 'videos' and 'images' and copy the required media into these for the presentation to work.
