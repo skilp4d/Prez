@@ -88,7 +88,7 @@ function P_Text(){
 		var animationObj = this.statesArrOb["state" + i];
 		if(animationObj){
 			$(this.represents).html(animationObj.text);
-			$(this.represents).fadeIn(200).delay(animationObj.delay).animate(animationObj.animate).css(animationObj.css);
+			$(this.represents).finish().fadeIn(200).delay(animationObj.delay).animate(animationObj.animate).css(animationObj.css);
 		}else{
 			$(this.represents).fadeOut();
 		}
@@ -101,7 +101,7 @@ function textToState(i,context){
 		var animationObj = context.statesArrOb["state" + i];
 		if(animationObj){
 			$(context.represents).html(animationObj.text);
-			$(context.represents).fadeIn(200).delay(animationObj.delay).animate(animationObj.animate).css(animationObj.css);
+			$(context.represents).finish().fadeIn(200).delay(animationObj.delay).animate(animationObj.animate).css(animationObj.css);
 		}else{
 			$(context.represents).fadeOut();
 		}
@@ -129,7 +129,7 @@ function Rectangle(){
 		currentState = i;
 		var animationObj = this.statesArrOb["state" + i];
 		if(animationObj){
-			$(this.represents).fadeIn(200).delay(animationObj.delay).animate(animationObj.animate).css(animationObj.css);
+			$(this.represents).finish().fadeIn(200).delay(animationObj.delay).animate(animationObj.animate).css(animationObj.css);
 		}else{
 			$(this.represents).fadeOut();
 		}
@@ -142,7 +142,7 @@ function rectToState(i,context){
 	currentState = i;
 		var animationObj = context.statesArrOb["state" + i];
 		if(animationObj){
-			$(context.represents).fadeIn(200).delay(animationObj.delay).animate(animationObj.animate).css(animationObj.css);
+			$(context.represents).finish().fadeIn(200).delay(animationObj.delay).animate(animationObj.animate).css(animationObj.css);
 		}else{
 			$(context.represents).fadeOut();
 		}
@@ -175,7 +175,7 @@ function Image(){
 		currentState = i;
 		var animationObj = this.statesArrOb["state" + i];
 		if(animationObj){
-			temp.fadeIn(200).delay(animationObj.delay).animate(animationObj.animate).css(animationObj.css);
+			temp.finish().fadeIn(200).delay(animationObj.delay).animate(animationObj.animate).css(animationObj.css);
 		}else{
 			this.fadeOut();
 		}
@@ -188,7 +188,7 @@ function imgToState(i,context){
 		currentState = i;
 		var animationObj = context.statesArrOb["state" + i];
 		if(animationObj){
-			$(context.represents).fadeIn(200).delay(animationObj.delay).animate(animationObj.animate).css(animationObj.css);
+			$(context.represents).finish().fadeIn(200).delay(animationObj.delay).animate(animationObj.animate).css(animationObj.css);
 		}else{
 			$(context.represents).fadeOut();
 		}
@@ -220,7 +220,7 @@ function Video(){
 		currentState = i;
 		var animationObj = this.statesArrOb["state" + i];
 		if(animationObj){
-			temp.fadeIn(200).delay(animationObj.delay).animate(animationObj.animate).css(animationObj.css);
+			temp.finish().fadeIn(200).delay(animationObj.delay).animate(animationObj.animate).css(animationObj.css);
 		}else{
 			this.fadeOut();
 		}
@@ -233,7 +233,7 @@ function vidToState(i,context){
 		currentState = i;
 		var animationObj = context.statesArrOb["state" + i];
 		if(animationObj){
-			$(context.represents).fadeIn(200).delay(animationObj.delay).animate(animationObj.animate).css(animationObj.css);
+			$(context.represents).finish().fadeIn(200).delay(animationObj.delay).animate(animationObj.animate).css(animationObj.css);
 		}else{
 			$(context.represents).fadeOut();
 		}
