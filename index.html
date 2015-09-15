@@ -1,14 +1,14 @@
 <html>
 <head>
 	<title>Presentation</title>
-	<script type="text/javascript" src="bin/homejava.js"></script>
-	<script type="text/javascript" src="bin/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="bin/script.js"></script>
-	<script type="text/javascript" src="bin/ui-interaction.js"></script>
-	<script type="text/javascript" src="bin/state.js"></script>
-	<script type="text/javascript" src="bin/saveLoad.js"></script>
-	<link rel="stylesheet" type="text/css" href="bin/style.css">
-	<link rel="stylesheet" type="text/css" href="bin/jquery-ui.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="src/script.js"></script>
+	<script type="text/javascript" src="src/ui-interaction.js"></script>
+	<script type="text/javascript" src="src/state.js"></script>
+	<script type="text/javascript" src="src/saveLoad.js"></script>
+	<link rel="stylesheet" type="text/css" href="src/style.css">
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
 </head>
 <body>
 	<div id="newSlide" class="left-tabs" title="Drag on the viewport to make a new Slide">NEW SLIDE</div>
@@ -19,14 +19,14 @@
 	<div id="newVideo" class="left-tabs" title="Drag on the viewport to add a new Video">VIDEO</div>
 	<div id="presentationArea"></div>
 
-	
+
 <div id="rightProperties">
 	<div id="itemsList">
 		<div id="addedHere">
 			<h2 id="right-list-header" title="Lists all the elements that are dragged in the viewport">Components View</h2>
 		</div>
 	</div>
-	<h2 id="selectedItemName" title="Selected element">None Selected</h2>	
+	<h2 id="selectedItemName" title="Selected element">None Selected</h2>
 	<div id="Properties_accordion">
 		<h3>Position</h3>
 		<div  class="accordion-subdiv">
